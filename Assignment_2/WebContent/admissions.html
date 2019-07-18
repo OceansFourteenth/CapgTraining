@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+	integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+	integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+	crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+	integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+	crossorigin="anonymous"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/styles.css" />
+<title>Admissions | CU</title>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">College University</a>
+			</div>
+
+
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="admissions.html">Admissions <span
+							class="sr-only">(current)</span></a></li>
+					<li><a href="courses.html">Courses</a></li>
+					<li><a href="professors.html">Professors</a></li>
+					<li><a href="sitemap.html">Sitemap</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<div id="page" class="container">
+		<h1>Sign up now to visit our campus or to learn more about us:</h1>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label for="fullname">Name:</label> <input type="text"
+					name="fullname" id="fullname" placeholder="Full Name" />
+			</div>
+			<div class="form-group">
+				<label for="phone">Phone:</label>
+				<input type="text" name="phone" id="phone" placeholder="Phone Number"
+					pattern="\d{10}" />
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="phone" placeholder="Email Address" />
+			</div>
+			<div class="form-group">
+				<label for="address">Address:</label> <br />
+				<textarea id="address"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="birthdate">Date of Birth:</label><input type="date" name="birthdate" id="birthdate" />
+			</div>
+			<div class="form-group">
+				<div>Prove you are not a robot by selecting the same number in
+					both fields below:</div>
+				<input name="num1" size="2" list="nums" />
+				<datalist id="nums">
+					<option>4</option>
+					<option>1</option>
+					<option>10</option>
+					<option>3</option>
+					<option>2</option>
+				</datalist>
+				<label>1<input type="radio" name="num2" value="1" /></label> <label>
+					10<input type="radio" name="num2" value="10" />
+				</label> <label>4<input type="radio" name="num2" value="4" /></label> <label>2<input type="radio"
+					name="num2" value="2" /></label> <label>3<input type="radio" name="num2"
+					value="3" /></label>
+			</div>
+			<div>
+				<input type="submit" class="btn btn-success" /> <input type="reset" class="btn btn-danger" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>
